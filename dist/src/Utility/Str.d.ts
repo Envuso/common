@@ -16,4 +16,6 @@ export declare class Str {
      * @param length
      */
     static uniqueRandom(length?: number): any;
+    static isEmpty(value: any): boolean;
 }
+export default Str;

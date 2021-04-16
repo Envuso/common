@@ -1,3 +1,5 @@
+import Obj from './Obj';
+
 export class Str {
 
 	/**
@@ -37,4 +39,10 @@ export class Str {
 			.substr(0, length);
 	}
 
+	static isEmpty(value: any): boolean {
+		return (Obj.isNullOrUndefined(value) || String(value).trim().length === 0);
+	}
+
 }
+
+export default Str;

@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Str = void 0;
+const Obj_1 = __importDefault(require("./Obj"));
 class Str {
     /**
      * Uses math.random() to get a quick and dirty random string
@@ -33,6 +37,10 @@ class Str {
             .toString('hex')
             .substr(0, length);
     }
+    static isEmpty(value) {
+        return (Obj_1.default.isNullOrUndefined(value) || String(value).trim().length === 0);
+    }
 }
 exports.Str = Str;
+exports.default = Str;
 //# sourceMappingURL=Str.js.map
