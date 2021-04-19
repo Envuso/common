@@ -8,6 +8,8 @@
 	<img alt="Wakatime" src="https://wakatime.com/badge/github/Envuso/common.svg">
 </p>
 
+# Please see https://github.com/Envuso/main instead. All the Envuso packages were moved into a single repository.
+
 # Envuso Common
 
 This repo holds some basic shared logic/utility methods that are used throughout the packages
